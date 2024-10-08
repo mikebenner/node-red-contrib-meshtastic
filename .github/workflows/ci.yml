@@ -1,4 +1,4 @@
-on: 
+on:
   push:
   workflow_dispatch:  # Enables manual triggering of the workflow
 
@@ -45,4 +45,10 @@ jobs:
         run: pnpm run build
 
       - name: Create .tgz Package
-        run: npm pack --pack-destination ./CI
+        run: npm pack
+
+      - name: Upload .tgz as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: package
+          path: '*.tgz'  # Adjust this pattern if needed
