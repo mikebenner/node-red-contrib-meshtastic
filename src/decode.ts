@@ -104,7 +104,7 @@ const nodeInit: NodeInitializer = (red): void => {
     });
   }
 
-  red.nodes.registerType("decode", DecodeNodeConstructor);
+  red.nodes.registerType("meshtastic-decode", DecodeNodeConstructor);
 };
 
 export default nodeInit;
