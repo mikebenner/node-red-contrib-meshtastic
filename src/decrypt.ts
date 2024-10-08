@@ -20,7 +20,7 @@ const nodeInit: NodeInitializer = (red): void => {
     });
   }
 
-  red.nodes.registerType("decrypt", DecryptNodeConstructor);
+  red.nodes.registerType("meshtastic-decrypt", DecryptNodeConstructor);
 };
 
 export default nodeInit;
