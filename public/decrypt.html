@@ -1,11 +1,23 @@
 <script type="text/javascript">
-  RED.nodes.registerType("decrypt", {
+  RED.nodes.registerType("meshtastic-decrypt", {
     category: "parser",
     color: "#67EA94",
+    defaults: {
+        name: { value: "" },
+    },
     inputs: 1,
     outputs: 1,
     icon: "logo.svg",
   });
 </script>
 
-<script type="text/html" data-template-name="decrypt"></script>
+<script type="text/x-red" data-template-name="meshtastic-decrypt">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="meshtastic-decrypt">
+    <p>Node-RED node that decrypts meshtastic data.</p>
+</script>
