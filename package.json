@@ -12,8 +12,8 @@
   "node-red": {
     "version": ">=3.0.0",
     "nodes": {
-      "decrypt": "./dist/decrypt.js",
-      "decode": "./dist/decode.js"
+      "meshtastic-decrypt": "./dist/decrypt.js",
+      "meshtastic-decode": "./dist/decode.js"
     }
   },
   "files": [
